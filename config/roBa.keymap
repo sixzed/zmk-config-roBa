@@ -137,7 +137,7 @@
         layer_mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &kp SCROLLLOCK
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &mo 4
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MCLK  &trans  &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
