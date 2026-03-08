@@ -39,11 +39,6 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
@@ -56,10 +51,10 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
+        to_layer_0_win: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER &kp LS(W) &kp I &kp N &kp EXCL &kp EXCL &kp EXCL>;
             label = "TO_LAYER_0";
         };
     };
@@ -68,7 +63,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+            bindings = <&mo>, <&to_layer_0_win>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -80,10 +75,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                    &kp T                                                   &kp Y        &kp U      &lt 5 I    &kp O      &kp P
-&kp LC(A)         &kp LA(S)     &kp LG(D)     &kp LS(F)                &kp G        &kp LS(LG(S))               &kp MINUS      &kp H        &kp RS(J)  &kp RG(K)  &kp RA(L)  &kp RC(SQT)
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                    &kp B        &kp COLON                   &kp SEMICOLON  &kp N        &kp M      &kp COMMA  &kp DOT    &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 ESCAPE  &lt 2 SPACE  &lt_to_layer_0 3 ENTER      &kp TAB        &lt 1 ENTER                                   &kp DEL
+&kp Q             &kp W           &kp E           &kp R                    &kp T                                                   &kp Y        &kp U              &lt 5 I          &kp O            &kp P
+&mt LCTRL A       &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F         &kp G        &to_layer_0_win SPACE       &kp MINUS      &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON
+&mt LEFT_SHIFT Z  &kp X           &kp C           &kp V                    &kp B        &kp COLON                   &kp SEMICOLON  &kp N        &kp M              &kp COMMA        &kp DOT          &kp SLASH
+&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT    &lt_to_layer_0 6 ESCAPE  &lt 2 SPACE  &lt_to_layer_0 3 ENTER      &kp TAB        &lt 1 ENTER                                                       &kp DEL
             >;
         };
 
@@ -112,8 +107,6 @@
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
