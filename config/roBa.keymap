@@ -84,10 +84,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &kp E           &kp R         &kp T                                                &kp Y            &kp U  &lt 4 I    &kp O            &kp P
-&mt LCTRL A       &mt LEFT_ALT S  &mt LEFT_GUI D  &kp F         &kp G      &to_layer_0_win ENTER      &kp MINUS      &kp H            &kp J  &lt 6 K    &mt RIGHT_ALT L  &lt 4 SEMICOLON
+&kp Q             &kp W           &kp E           &kp R         &kp T                                                &kp Y            &kp U  &lt 6 I    &kp O            &kp P
+&mt LCTRL A       &mt LEFT_ALT S  &mt LEFT_GUI D  &kp F         &kp G      &to_layer_0_win ENTER      &kp MINUS      &kp H            &kp J  &lt 6 K    &mt RIGHT_ALT L  &lt 5 SEMICOLON
 &mt LEFT_SHIFT Z  &kp X           &kp C           &kp V         &kp B      &kp COLON                  &kp SEMICOLON  &kp N            &kp M  &kp COMMA  &kp DOT          &kp SLASH
-&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT    &lt 5 ESCAPE  &kp SPACE  &lt 2 ENTER                &lt 1 TAB      &kp RIGHT_SHIFT                                     &kp DEL
+&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT    &lt 4 ESCAPE  &kp SPACE  &lt 2 ENTER                &lt 1 TAB      &kp RIGHT_SHIFT                                     &kp DEL
             >;
         };
 
@@ -118,21 +118,21 @@
             >;
         };
 
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
-            >;
-        };
-
         layer_Ble {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
