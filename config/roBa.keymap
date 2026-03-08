@@ -31,7 +31,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <11 10>;
         };
 
         shift_tab {
@@ -47,6 +47,11 @@
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
         };
     };
 
@@ -75,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &kp E           &kp R                    &kp T                                                   &kp Y        &kp U              &lt 5 I          &kp O            &kp P
-&mt LCTRL A       &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F         &kp G        &to_layer_0_win SPACE       &kp MINUS      &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON
-&mt LEFT_SHIFT Z  &kp X           &kp C           &kp V                    &kp B        &kp COLON                   &kp SEMICOLON  &kp N        &kp M              &kp COMMA        &kp DOT          &kp SLASH
-&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT    &lt_to_layer_0 6 ESCAPE  &lt 2 SPACE  &lt_to_layer_0 3 ENTER      &kp TAB        &lt 1 ENTER                                                       &kp DEL
+&kp Q             &kp W           &kp E           &kp R       &kp T                                                &kp Y            &kp U  &lt 5 I          &kp O            &kp P
+&mt LCTRL A       &mt LEFT_ALT S  &mt LEFT_GUI D  &kp F       &kp G      &to_layer_0_win SPACE      &kp MINUS      &kp H            &kp J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON
+&mt LEFT_SHIFT Z  &kp X           &kp C           &kp V       &kp B      &kp COLON                  &kp SEMICOLON  &kp N            &kp M  &kp COMMA        &kp DOT          &kp SLASH
+&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT    &kp ESCAPE  &kp SPACE  &lt 2 ENTER                &lt 1 TAB      &kp RIGHT_SHIFT                                           &kp DEL
             >;
         };
 
@@ -93,10 +98,10 @@
 
         NUM {
             bindings = <
-&kp MINUS  &kp N7        &kp N8        &kp N9        &kp N0                                                     &kp LEFT_BRACKET      &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SQT    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp RIGHT_BRACKET     &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp NON_US_BACKSLASH  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans     &trans        &trans        &trans        &trans        &trans                       &trans          &trans                                                                         &kp PIPE
+&kp MINUS  &kp N7        &kp N8        &kp N9        &kp N0                                                      &kp LEFT_BRACKET      &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SQT    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BACKSPACE  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp RIGHT_BRACKET     &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE      &kp EQUAL                    &trans          &kp NON_US_BACKSLASH  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&trans     &trans        &trans        &trans        &trans         &trans                       &trans          &trans                                                                         &kp PIPE
             >;
         };
 
