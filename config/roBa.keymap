@@ -85,7 +85,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W           &kp E           &kp R         &kp T                                                &kp Y            &kp U  &lt 7 I    &kp O            &kp P
-&mt LCTRL A       &mt LEFT_ALT S  &mt LEFT_GUI D  &kp F         &kp G      &to_layer_0_win ENTER      &kp MINUS      &kp H            &kp J  &lt 7 K    &mt RIGHT_ALT L  &kp SEMICOLON
+&mt LCTRL A       &mt LEFT_ALT S  &mt LEFT_GUI D  &kp F         &kp G      &to_layer_0_win ENTER      &kp MINUS      &kp H            &kp J  &lt 7 K    &mt RIGHT_ALT L  &lt 5 SEMICOLON
 &mt LEFT_SHIFT Z  &kp X           &kp C           &kp V         &kp B      &kp COLON                  &kp SEMICOLON  &kp N            &kp M  &kp COMMA  &kp DOT          &kp SLASH
 &kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT    &lt 6 ESCAPE  &kp SPACE  &lt 2 ENTER                &lt 1 TAB      &kp RIGHT_SHIFT                                     &kp DEL
             >;
@@ -147,10 +147,10 @@
 
         layer_mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &mo 5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MCLK  &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans    &trans        &trans    &trans     &trans                      &trans  &trans     &trans  &trans     &trans
+&kp LEFT  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &trans  &trans      &trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &trans
+&trans    &trans        &trans    &trans     &trans  &trans      &trans  &trans  &mkp MCLK  &trans  &trans     &trans
+&trans    &trans        &trans    &trans     &trans  &trans      &trans  &trans                                &trans
             >;
         };
     };
